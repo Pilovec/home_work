@@ -6,7 +6,7 @@ from app.models import User, Post
 from werkzeug.urls import url_parse
 from datetime import datetime
 
-
+#changes
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 @login_required
