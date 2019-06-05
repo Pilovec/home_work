@@ -1,4 +1,4 @@
-2019-06-02 19:27:00,275 ERROR: Exception on / [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
+2019-06-02 19:27:21,888 ERROR: Exception on /index [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -49,7 +49,7 @@ Traceback (most recent call last):
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/jinja2/parser.py", line 59, in fail
     raise exc(msg, lineno, self.name, self.filename)
 jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'.
-2019-06-02 19:27:19,968 ERROR: Exception on /index [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
+2019-06-02 19:27:24,449 ERROR: Exception on /explore [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -65,8 +65,8 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "/home/pilovec/www/microblog/app/routes.py", line 33, in index
-    posts=posts)
+  File "/home/pilovec/www/microblog/app/routes.py", line 137, in explore
+    return render_template('index.html', title='Explore', posts=posts)
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
     return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
@@ -100,3 +100,4 @@ Traceback (most recent call last):
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/jinja2/parser.py", line 59, in fail
     raise exc(msg, lineno, self.name, self.filename)
 jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'.
+2019-06-02 19:30:24,228 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]

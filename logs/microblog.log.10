@@ -1,4 +1,4 @@
-2019-05-26 17:58:03,082 ERROR: Exception on /edit_profile [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
+2019-05-26 22:11:02,436 ERROR: Exception on /explore [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -14,25 +14,29 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "/home/pilovec/www/microblog/app/routes.py", line 82, in edit_profile
-    form = EditProfileForm()
-  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/wtforms/form.py", line 212, in __call__
-    return type.__call__(cls, *args, **kwargs)
-TypeError: __init__() missing 1 required positional argument: 'original_username'
-2019-05-26 17:58:53,394 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 18:46:56,402 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 18:47:09,918 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 19:09:04,049 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 19:13:33,597 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 19:16:45,195 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 21:05:41,187 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 21:11:01,829 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 21:12:56,534 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 21:16:26,521 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 21:54:32,145 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 22:01:36,481 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 22:08:48,198 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 22:08:52,843 ERROR: Exception on /index [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
+  File "/home/pilovec/www/microblog/app/routes.py", line 45, in explore
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2019-05-26 22:11:03,480 ERROR: Exception on /user/shnyk [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/pilovec/www/microblog/app/routes.py", line 99, in user
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2019-05-26 22:11:13,483 ERROR: Exception on /index [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -51,7 +55,10 @@ Traceback (most recent call last):
   File "/home/pilovec/www/microblog/app/routes.py", line 30, in index
     page, app.config['POSTS_PER_PAGE'], False)
 KeyError: 'POSTS_PER_PAGE'
-2019-05-26 22:09:09,281 ERROR: Exception on /index [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
+2019-05-26 22:15:18,982 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
+2019-05-26 22:31:03,531 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
+2019-05-26 22:34:36,339 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
+2019-05-26 22:34:40,879 ERROR: Exception on /explore [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -67,11 +74,10 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "/home/pilovec/www/microblog/app/routes.py", line 30, in index
+  File "/home/pilovec/www/microblog/app/routes.py", line 129, in explore
     page, app.config['POSTS_PER_PAGE'], False)
 KeyError: 'POSTS_PER_PAGE'
-2019-05-26 22:10:55,479 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
-2019-05-26 22:10:58,505 ERROR: Exception on /index [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
+2019-05-26 22:34:47,624 ERROR: Exception on /explore [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -87,25 +93,7 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "/home/pilovec/www/microblog/app/routes.py", line 30, in index
+  File "/home/pilovec/www/microblog/app/routes.py", line 129, in explore
     page, app.config['POSTS_PER_PAGE'], False)
 KeyError: 'POSTS_PER_PAGE'
-2019-05-26 22:11:00,832 ERROR: Exception on /index [GET] [in /home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/pilovec/.virtualenvs/microblog_env/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/home/pilovec/www/microblog/app/routes.py", line 30, in index
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
+2019-05-26 22:48:27,773 INFO: Microblog startup [in /home/pilovec/www/microblog/app/__init__.py:43]
