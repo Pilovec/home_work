@@ -45,3 +45,11 @@ Traceback (most recent call last):
 werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'edit_profile' instead?
 2019-06-05 16:25:25,708 INFO: Microblog startup [in C:\Users\teperchuk-av\www\microbloge_work\app\__init__.py:45]
 2019-06-05 16:29:59,013 INFO: Microblog startup [in C:\Users\teperchuk-av\www\microbloge_work\app\__init__.py:45]
+2019-06-06 09:06:17,824 INFO: Microblog startup [in C:\Users\teperchuk-av\www\microbloge_work\app\__init__.py:45]
+2019-06-06 09:28:55,568 INFO: Microblog startup [in C:\Users\teperchuk-av\www\microbloge_work\app\__init__.py:48]
+2019-06-06 09:35:27,582 INFO: Microblog startup [in C:\Users\teperchuk-av\www\microbloge_work\app\__init__.py:48]
+2019-06-06 09:38:12,036 INFO: Microblog startup [in C:\Users\teperchuk-av\www\microbloge_work\app\__init__.py:48]
+2019-06-06 09:43:56,083 INFO: Microblog startup [in C:\Users\teperchuk-av\www\microbloge_work\app\__init__.py:48]
+2019-06-06 09:45:38,788 INFO: Microblog startup [in C:\Users\teperchuk-av\www\microbloge_work\app\__init__.py:48]
+2019-06-06 09:51:48,012 INFO: Microblog startup [in C:\Users\teperchuk-av\www\microbloge_work\app\__init__.py:48]
+2019-06-06 09:55:11,207 INFO: Microblog startup [in C:\Users\teperchuk-av\www\microbloge_work\app\__init__.py:48]
