@@ -52,5 +52,6 @@
 {% block scripts %}
     {{ super() }}
     {{ moment.include_moment() }}
+    {{ moment.lang(g.locale) }}
     <!-- {{ moment.lang('ru') }} -->
 {% endblock %}
